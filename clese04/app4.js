@@ -19,7 +19,6 @@ for (let i = 1; i <=20; i++){
     } else {
             contadorImpares = contadorImpares + 1
         }
-
 }
 // Imprimo el resultado en la consola
 console.log("Total de números pares: " + contadorPares); // Imprime el total de números pares
