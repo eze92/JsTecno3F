@@ -15,25 +15,35 @@ while (continuar) {
     let operacion = prompt("Ingrese la operacion a realizar: Suma, Resta, Multiplicacion o Division: ");
     let resultado;
 
+    if (isNaN(numero1) || isNaN(numero2)) {
+        console.log("Error: Uno o ambos valores ingresados no son números válidos.");
+    } else {
     if (operacion === "Suma"){
         resultado = numero1 + numero2;
-        console.log( "Resultado:",resultado)
+        //console.log( "Resultado:",resultado)
     }else if(operacion === "Multiplicacion") {
         resultado = numero1 * numero2;
-        console.log("Resultado:",resultado);
+       // console.log("Resultado:",resultado);
     }else if(operacion === "Resta"){
         resultado = numero1 - numero2;
-        console.log("Resultado:",resultado);
+       // console.log("Resultado:",resultado);
     }else if(operacion === "Division" ){
         if(numero2 === 0){
             console.log("Error: No se puede dividir por cero.");
+            resultado = null;
         }else{
             resultado = numero1 / numero2;
-            console.log("Resultado:",resultado);
+          //  console.log("Resultado:",resultado);
         }
     } else{
         console.log( "La operacion ingresada no es valida")
+        resultado = null;
     }
+     // Mostrar el resultado si es válido
+     if (resultado !== null) {
+        console.log("Resultado:", resultado);
+    }
+}
 
     // Preguntar si desea continuar
     let respuesta = prompt("¿Desea realizar otra operación? (si/no): ").toLowerCase();
