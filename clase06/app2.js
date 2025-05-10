@@ -6,7 +6,7 @@ Requerimientos:
 Mostrar los nombres de los estudiantes aprobados (calificación mayor o igual a 6).
 Contar y mostrar la cantidad de estudiantes reprobados.*/
 
-aprobados = 0
+let aprobados = 0
 
 const estudiantes = [
     { nombre : "Ana", calificacion: 8},
