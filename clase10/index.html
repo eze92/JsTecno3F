@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <style>
+    .error { border: 2px solid red; }
+    .valido { border: 2px solid green; }
+    .mensaje-error { color: red; font-size: 0.9em; }
+    .mensaje-exito { color: green; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <form id="registroForm" autocomplete="off">
+    <div>
+      <label>Nombre:</label><br>
+      <input type="text" id="nombre">
+      <div id="errorNombre" class="mensaje-error"></div>
+    </div>
+    <div>
+      <label>Correo electrónico:</label><br>
+      <input type="email" id="email">
+      <div id="errorEmail" class="mensaje-error"></div>
+    </div>
+    <div>
+      <label>Contraseña:</label><br>
+      <input type="password" id="password">
+      <div id="errorPassword" class="mensaje-error"></div>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+  <div id="mensajeExito" class="mensaje-exito"></div>
+  <script src="app.js"></script>
+</body>
+</html>

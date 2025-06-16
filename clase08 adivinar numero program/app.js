@@ -58,6 +58,7 @@ function pedirNumero() {
     });
 }
 
+//no es necesario el while
 while (!encontrado && intentos < maxIntentos) {
     pedirNumero();
     break; // Necesario para evitar múltiples llamadas por la naturaleza asíncrona de readline
