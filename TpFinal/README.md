@@ -37,11 +37,6 @@ Este proyecto web combina el consumo de una API pública de Dragon Ball con un f
 3. Navegá por las secciones: Inicio, Personajes, Contacto.
 4. Probá el formulario y explorá los personajes.
 
-## 📸 Vista previa
-
-> Podés agregar una captura de pantalla aquí para mostrar la interfaz.
-
----
 
 Desarrollado con 💻 por Ezequiel Ledesma  
 Trabajo final del curso de JavaScript — Tecno3F
